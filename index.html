@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title>Dalya Gershtein</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dalya Gershtein</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#section1">CV</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section3">Projects</a></li>
+                        <li><a href="#section4">Art</a></li>
+                        <li><a href="#section5">Travel</a></li>
+                    </ul>
+                </div><!--/.navbar-collapse --> 
+            </div>
+        </div>
+        <div id="features">
+            <div class="feature" id="outdo">
+                <div class="outdolines" id="outdo1"></div>
+                <div class="outdolines" id="outdo2"></div>
+                <div class="outdolines" id="outdo3"></div>
+                <div class="outdolines" id="outdo4"></div>
+                <div class="outdolines" id="outdo5"></div>
+                <div id="outdologo"></div>
+            </div>
+            <div class="feature" id="loot"><div id="lootlogo"></div></div>
+            <div class="feature center" id="squiggle"></div>
+            <div class="feature center" id="picturethis"><div id="picturethislogo"></div></div>
+            <div class="feature" id="walle"><div id="walleimg"></div></div>
+            <div class="feature" id="appleseed"><div id="appleseedlogo"></div></div>
+        </div>
+        <footer>
+            <p>© Dalya Gershtein 2014</p>
+        </footer>
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready( function() {
+            $("#features").height( $(window).height() - $("#navbar").height() );
+        });
+    </script>
+</body>
+</html>
+
