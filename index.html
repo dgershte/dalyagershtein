@@ -14,7 +14,6 @@
         <link href="css/index.css" rel="stylesheet">
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="js/ie10-viewport-bug-workaround.js"></script>
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -32,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dalya Gershtein</a>
+                    <a class="navbar-brand" href="index.html">Dalya Gershtein</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -41,6 +40,8 @@
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="art.html">Art</a></li>
                         <li><a href="http://dalyagershtein.blogspot.ca/">Travel</a></li>
+                        <li><a href="https://www.behance.net/dgershte"><img src="images/behance.png"/></a></li>
+                        <li><a href="https://github.com/dgershte"><img style="height:20px!important"src="images/github.png"/></a></li>
                     </ul>
                 </div><!--/.navbar-collapse --> 
             </div>
@@ -54,32 +55,58 @@
                     <div class="outdolines" id="outdo4"></div>
                     <div class="outdolines" id="outdo5"></div>
                     <div id="outdologo"></div>
+                    <div class="caption">
+                        <h2>Outdo</h2>
+                        <p class="lead">Workout Tracker App</p>
+                    </div>
                 </div>
             </a>
             <a href="projects.html#loot">
                 <div class="feature" id="loot-feature">
                     <div id="lootlogo"></div>
+                    <div class="caption">
+                        <h2>Great Canadian Appathon submission</h2>
+                    </div>
                 </div>
             </a>
             <a href="projects.html#squiggle">
-                <div class="feature center" id="squiggle-feature"></div>
+                <div class="feature center" id="squiggle-feature">
+                    <div class="caption">
+                        <h2 class="text-center">Squiggle - Hackathon Winner</h2>
+                        <p class="lead">3D/2D browser game</p>
+                    </div>
+                </div>
             </a>
             <a href="projects.html#picturethis">
-                <div class="feature center" id="picturethis-feature"><div id="picturethislogo"></div></div>
+                <div class="feature center" id="picturethis-feature">
+                    <div id="picturethislogo"></div>
+                    <div class="caption">
+                        <h2>iOS Drawing Game</h2>
+                    </div>
+                </div>
             </a>
             <a href="projects.html#walle">
-                <div class="feature" id="walle-feature"><div id="walleimg"></div></div>
+                <div class="feature" id="walle-feature">
+                    <div id="walleimg"></div>
+                    <div class="caption">
+                        <h2>Raytracer</h2>
+                        <p class="lead">C++ Extended Raytraced</p>
+                    </div>
+                </div>
             </a>
             <a href="projects.html#appleseed">
-                <div class="feature" id="appleseed-feature"><div id="appleseedlogo"></div></div>
+                <div class="feature" id="appleseed-feature">
+                    <div id="appleseedlogo"></div>
+                    <div class="caption">
+                        <h2>The Appleseed</h2>
+                        <p class="lead">Web dev/design, Graphic Design</p>
+                    </div>
+                </div>
             </a>
         </div>
-        <footer>
-            <p>© Dalya Gershtein 2014</p>
-        </footer>
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready( function() {
             $("#features").height( $(window).height() - $("#navbar").height() );

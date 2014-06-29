@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Dalya Gershtein | Art</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,12 +20,9 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/jquery.minicolors.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
         <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -45,13 +42,16 @@
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="art.html">Art</a></li>
                         <li><a href="http://dalyagershtein.blogspot.ca/">Travel</a></li>
+                        <li><a href="https://www.behance.net/dgershte"><img src="images/behance.png"/></a></li>
+                        <li><a href="https://github.com/dgershte"><img style="height:20px!important"src="images/github.png"/></a></li>
+                        <li><a href="https://github.com/dgershte"><img style="height:20px!important"src="images/youtube.png"/></a></li>
                     </ul>
                 </div><!--/.navbar-collapse --> 
             </div>
         </div>
 
     <div class="container marketing">
-      <div class="row featurette">
+      <div class="row featurette expandable">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="images/carnivale.png" alt="3D Animation">
         </div>
@@ -197,6 +197,7 @@
             </p>
         </div>
       </div>
+      <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
 
@@ -206,16 +207,21 @@
         <p>&copy; 2014 Dalya Gershtein. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
+    </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+        $(document).ready( function() {
+            $(".expandable").click(function () {
+                var el = $(this);
+                //$(this).toggle( function() {
+                    $(el).animate({"left":"-100%"});
+                  //  }, function() {
+                  //  $(el).animate({"left":"0"});
+                //});
+             });
+        });
     </script>
   </body>
 </html>
