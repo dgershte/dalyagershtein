@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-fixed-top {
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.1);
     background-color:white;
     border:none;
 }
@@ -190,4 +190,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
         left:0 !important;
         margin-bottom:1%;
     }
+}
+
+/*          GRADIENTS           */
+#gradient-container {
+}
+
+#gradient {
+	clear:both;
+	width: 400px;
+	height: 400px;
+    position:relative;
+    margin:auto;
+}
+
+#gradient div {
+	position: absolute;
 }
