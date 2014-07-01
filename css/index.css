@@ -234,6 +234,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
         margin-bottom:1%;
     }
 }
+/*****   PROJECTS ***********/
+.grey-section {
+    background-color:#f8f8f8;
+    padding:50px 0;
+}
+
+.white-section {
+    padding:50px 0;
+}
+
+#projects-page {
+}
+
+.hidethis {
+    display:none;
+    clear:both;
+    padding-top:80px;
+}
+
+.iphone {
+    position:relative;
+}
+
+.glyphicon-nav {
+    font-size: 31px;
+    color: #ccc;
+    position:absolute;
+}
+
+.glyphicon-chevron-left {
+    top: 544px;
+    left: 57px;
+}
+.glyphicon-chevron-right {
+top: 544px;
+left: 214px;
+}
+
+
+.screenshot {
+position: absolute;
+top: 82px;
+left: 30px;
+height: 436px;
+}
+
 
 /*          GRADIENTS           */
 #gradient {
