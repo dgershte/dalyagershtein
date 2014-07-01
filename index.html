@@ -58,9 +58,17 @@
             </div>
         </div>
         <div id="features">
-            <div id="hoverdiv"></div>
+            <div id="hoverdiv">
+            </div>
             <a href="projects.html#outdo">
                 <div class="feature" id="outdo-feature">
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Outdo</h2>
+                            <p class="lead">Workout Tracker App</p>
+                            <a class="btn btn-default" href="projects.html#outdo" role="button">View Project »</a>
+                        </div>
+                    </div>
                     <div class="outdolines" id="outdo1"></div>
                     <div class="outdolines" id="outdo2"></div>
                     <div class="outdolines" id="outdo3"></div>
@@ -75,43 +83,93 @@
             </a>
             <a href="projects.html#loot">
                 <div class="feature" id="loot-feature">
-                    <div id="lootlogo"></div>
-                    <div class="caption">
-                        <h2>Great Canadian Appathon submission</h2>
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Loot</h2>
+                            <p class="lead">iOS Sliding Puzzle Game</p>
+                            <a class="btn btn-default" href="projects.html#loot" role="button">View Project »</a>
+                        </div>
                     </div>
+                    <div id="lootlogo"></div>
                 </div>
             </a>
             <a href="projects.html#squiggle">
                 <div class="feature center" id="squiggle-feature">
-                    <div class="caption">
-                        <h2 class="text-center">Squiggle - Hackathon Winner</h2>
-                        <p class="lead">3D/2D browser game</p>
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Squiggle</h2>
+                            <p class="lead">Hackathon Winner</p>
+                            <a class="btn btn-default" href="projects.html#squiggle" role="button">View Project »</a>
+                        </div>
                     </div>
                 </div>
             </a>
             <a href="projects.html#picturethis">
                 <div class="feature center" id="picturethis-feature">
-                    <div id="picturethislogo"></div>
-                    <div class="caption">
-                        <h2>iOS Drawing Game</h2>
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Picture This</h2>
+                            <p class="lead">iOS Drawing Game</p>
+                            <a class="btn btn-default" href="projects.html#picturethis" role="button">View Project »</a>
+                        </div>
                     </div>
+                    <div id="picturethislogo"></div>
                 </div>
             </a>
             <a href="projects.html#walle">
                 <div class="feature" id="walle-feature">
-                    <div id="walleimg"></div>
-                    <div class="caption">
-                        <h2>Raytracer</h2>
-                        <p class="lead">C++ Extended Raytraced</p>
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Raytracer</h2>
+                            <p class="lead">C++</p>
+                            <a class="btn btn-default" href="projects.html#walle" role="button">View Project »</a>
+                        </div>
                     </div>
+                    <div id="walleimg"></div>
                 </div>
             </a>
             <a href="projects.html#appleseed">
                 <div class="feature" id="appleseed-feature">
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>The Appleseed</h2>
+                            <p class="lead">Web dev/design, Graphic Design</p>
+                            <a class="btn btn-default" href="projects.html#appleseed" role="button">View Project »</a>
+                        </div>
+                    </div>
                     <div id="appleseedlogo"></div>
-                    <div class="caption">
-                        <h2>The Appleseed</h2>
-                        <p class="lead">Web dev/design, Graphic Design</p>
+                </div>
+            </a>
+            <a href="art.html#carnival">
+                <div class="feature" id="carnival-feature">
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Carnival</h2>
+                            <p class="lead">3D Animation</p>
+                            <a class="btn btn-default" href="art.html#carnival" role="button">View Project »</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="art.html#ht">
+                <div class="feature" id="ht-feature">
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Hotel Transylvannia</h2>
+                            <p class="lead">3D Animation</p>
+                            <a class="btn btn-default" href="art.html#ht" role="button">View Project »</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="art.html#chuckclose">
+                <div class="feature" id="chuckclose-feature">
+                    <div class="outdo-feature project-title">
+                        <div>
+                            <h2>Chuck Close Portrait</h2>
+                            <p class="lead">Acrylic Airbrush</p>
+                            <a class="btn btn-default" href="art.html#chuckclose" role="button">View Project »</a>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -122,6 +180,11 @@
     <script>
         $(document).ready( function() {
             $("#features").height( $(window).height() - $("#navbar").height() );
+            $( ".feature" ).mouseover(function(e) {
+                e.preventDefault();
+                var position = $(this).position();
+                $("#hoverdiv").stop(true,true).animate({"left":position.left,"top":position.top},"fast");
+            });
         });
     </script>
 </body>
