@@ -224,7 +224,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
         height:40%;
     }
 }
+
+/******** ABOUT **********/
+.about-section {
+    height: 300px;
+    width: 737px;
+    padding: 75px;
+    margin: auto;
+}
+
+.paper-top {
+    background:url("../images/papertop.png") no-repeat center;
+}
+
+.paper-bottom {
+    background:url("../images/paperbottom.png") no-repeat center;
+}
+
+.about-section img {
+    width:100px;
+}
+
+.about {
+    margin-top:200px;
+    margin-bottom:200px;
+}
+
+.about h2 {
+    font-weight:100;
+    margin-top:0;
+}
+
+.img-faded {
+    opacity:0.6;
+}
 /*****   PROJECTS ***********/
+.storeicons img{
+    height:40px;
+    margin:0 40px 20px 0px;
+    opacity:0.6;
+}
+
+.storeicons img:hover {
+    opacity:1;
+}
+
+
 .grey-section {
     background-color:#f8f8f8;
     padding:50px 0;
