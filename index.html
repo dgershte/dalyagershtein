@@ -66,7 +66,6 @@
                         <div>
                             <h2>Outdo</h2>
                             <p class="lead">Workout Tracker App</p>
-                            <a class="btn btn-default" href="projects.html#outdo" role="button">View Project »</a>
                         </div>
                     </div>
                     <div class="outdolines" id="outdo1"></div>
@@ -87,7 +86,6 @@
                         <div>
                             <h2>Loot</h2>
                             <p class="lead">iOS Sliding Puzzle Game</p>
-                            <a class="btn btn-default" href="projects.html#loot" role="button">View Project »</a>
                         </div>
                     </div>
                     <div id="lootlogo"></div>
@@ -99,7 +97,6 @@
                         <div>
                             <h2>Squiggle</h2>
                             <p class="lead">Hackathon Winner</p>
-                            <a class="btn btn-default" href="projects.html#squiggle" role="button">View Project »</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +107,6 @@
                         <div>
                             <h2>Picture This</h2>
                             <p class="lead">iOS Drawing Game</p>
-                            <a class="btn btn-default" href="projects.html#picturethis" role="button">View Project »</a>
                         </div>
                     </div>
                     <div id="picturethislogo"></div>
@@ -122,7 +118,6 @@
                         <div>
                             <h2>Raytracer</h2>
                             <p class="lead">C++</p>
-                            <a class="btn btn-default" href="projects.html#walle" role="button">View Project »</a>
                         </div>
                     </div>
                     <div id="walleimg"></div>
@@ -134,7 +129,6 @@
                         <div>
                             <h2>The Appleseed</h2>
                             <p class="lead">Web dev/design, Graphic Design</p>
-                            <a class="btn btn-default" href="projects.html#appleseed" role="button">View Project »</a>
                         </div>
                     </div>
                     <div id="appleseedlogo"></div>
@@ -146,7 +140,6 @@
                         <div>
                             <h2>Carnival</h2>
                             <p class="lead">3D Animation</p>
-                            <a class="btn btn-default" href="art.html#carnival" role="button">View Project »</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +150,6 @@
                         <div>
                             <h2>Hotel Transylvannia</h2>
                             <p class="lead">3D Animation</p>
-                            <a class="btn btn-default" href="art.html#ht" role="button">View Project »</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +160,6 @@
                         <div>
                             <h2>Chuck Close Portrait</h2>
                             <p class="lead">Acrylic Airbrush</p>
-                            <a class="btn btn-default" href="art.html#chuckclose" role="button">View Project »</a>
                         </div>
                     </div>
                 </div>
@@ -180,10 +171,12 @@
     <script>
         $(document).ready( function() {
             $("#features").height( $(window).height() - $("#navbar").height() );
+            var colors = ["#1abc9c","#3498db","#9b59b6","#e74c3c","#f1c40f","#34495e"];
+            var i = 0;
             $( ".feature" ).mouseover(function(e) {
                 e.preventDefault();
                 var position = $(this).position();
-                $("#hoverdiv").stop(true,true).animate({"left":position.left,"top":position.top},"fast");
+                $("#hoverdiv").stop(true,true).animate({"left":position.left,"top":position.top,"background-color":"red"},"fast").css("background-color",colors[i++ % colors.length] );
             });
         });
     </script>
