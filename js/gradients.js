@@ -138,5 +138,5 @@ function Gradient(element,  arr){
 
 $( document ).ready(function() {
 	element = document.getElementById('gradient');
-	gradient = new Gradient(element, [ new Color(0,174,239), new Color(105, 230, 4)]);
+	gradient = new Gradient(element, [ new Color(254, 255, 87), new Color(98, 255, 87)]);
 });
