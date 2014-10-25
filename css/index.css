@@ -3,6 +3,10 @@ html, body {
     width:100%;
 }
 
+.text-muted {
+    font-size:35px;
+}
+
 .navbar-fixed-top {
     box-shadow: 0 0 30px 0px rgba(0,0,0,0.1);
     background-color:white;
@@ -329,6 +333,23 @@ top:-2px;
     opacity:0.75;
 }
 /*****   PROJECTS ***********/
+body#projects-page {
+    background: #47a3da;
+}
+
+.featurette-image {
+    transition: box-shadow 0.5s;
+    cursor:pointer;
+}
+
+.featurette-image:hover {
+    box-shadow: 0 0 15px 2px rgba(71, 163, 218, 0.55);
+}
+
+.white-section .featurette-image:hover {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+}
+
 .storeicons img{
     height:40px;
     margin:0 40px 20px 0px;
@@ -345,18 +366,21 @@ top:-2px;
     padding:50px 0;
 }
 
+.grey-section a {
+    color:#47a3da;
+}
+
 .white-section {
     padding-top:50px;
     padding-bottom:50px;
 }
 
-#projects-page {
+.white-section, .white-section a {
+    color:white;
 }
 
-.hidethis {
-    display:none;
-    clear:both;
-    padding-top:80px;
+.white-section .text-muted {
+    color:rgba(255, 255, 255, 0.5);
 }
 
 .iphone {
