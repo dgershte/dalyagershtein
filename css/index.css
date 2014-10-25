@@ -245,6 +245,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
     margin: auto;
     position:relative;
     width:80%;
+    max-width:600px;
 	margin-bottom:10px;
 }
 
@@ -263,7 +264,7 @@ opacity:.99;
 }
 
 .about-inner {
-    padding-top:50px;
+    padding:50px;
     position:absolute;
     margin:auto;
     top:0;
@@ -329,6 +330,15 @@ top:-2px;
     opacity:0.75;
 }
 /*****   PROJECTS ***********/
+.cbp-so-side img {
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.1);
+}
+
+#cbp-so-scroller {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .storeicons img{
     height:40px;
     margin:0 40px 20px 0px;
