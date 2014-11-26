@@ -267,7 +267,7 @@ opacity:.99;
 }
 
 .about-inner {
-    padding-top:50px;
+    padding:50px 25px;
     position:absolute;
     margin:auto;
     top:0;
@@ -315,7 +315,7 @@ transform: rotate(3deg);
 top:-2px;
 }
 .about-section img {
-    height:15%;
+    height:25%;
     margin:auto;
 }
 
@@ -361,11 +361,10 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color:#47a3da;
-    color:white;
+    background-color:#F9F9F9;
 }
 
-section:nth-child(odd) a{
+/*section:nth-child(odd) a{
     color:white
 }
 section:nth-child(odd) .text-muted{
@@ -373,7 +372,7 @@ section:nth-child(odd) .text-muted{
 }
 section:nth-child(odd) .featurette-image:hover {
     box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
-}
+}*/
 
 .iphone {
     position:relative;
@@ -406,8 +405,8 @@ height: 436px;
 /*          GRADIENTS           */
 #gradient {
 	clear:both;
-	width: 400px;
-	height: 400px;
+	width: 320px;
+	height: 320px;
     position:relative;
     margin:auto;
 }
@@ -434,3 +433,120 @@ height: 436px;
     font-size:30px
 }
 
+/*********** SLIDER ****************/
+/* Slider */
+.slider .frames {
+    height: 250px;
+    position: relative;
+}
+.slider .frames .slide {
+    height: 250px;
+    list-style: none;
+    position: absolute;
+    width: 450px;
+}
+.slider .slide:target { z-index: 100 }
+.slider .frames .slide img {
+    height: 250px;
+    width: 450px;
+}
+.slider .frames .slide nav a {
+    background: hsla(0,0%,0%,.75);
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    margin-top: -25px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    width: 50px;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider:hover .frames .slide nav a {
+    opacity: 1;
+    visibility: visible;
+}
+.slider .frames .slide nav .prev {
+    /*border-radius*/
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    left: 0;
+}
+.slider .frames .slide nav .next {
+    /*border-radius*/
+    -webkit-border-radius: 25px 0 0 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    border-radius: 25px 0 0 25px;
+    right: 0;
+}
+.slider .frames .slide nav a:hover { background: #000 }
+.slider .quicknav {
+    bottom: 0;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+.slider:hover .quicknav { opacity: .9 }
+.slider .quicknav li { display: inline-block }
+.slider .quicknav a {
+    background: hsla(0,0%,100%,.9);
+    border: 1px solid hsla(0,0%,0%,.9);
+    /*border-radius*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: block;
+    height: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    width: 10px;
+}
+.slider .quicknav a:hover { background: hsla(0,0%,50%,.9) }
+.slider #one:target ~ .quicknav a[href="#one"], .slider #two:target ~ .quicknav a[href="#two"], .slider #three:target ~ .quicknav a[href="#three"], .slider #four:target ~ .quicknav a[href="#four"], .slider #five:target ~ .quicknav a[href="#five"] {
+    background: hsla(0,0%,0%,.9);
+    border-color: hsla(0,0%,100%,.9);
+    background: rgb(244,246,245);
+    /*linear-gradient*/
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(rgba(244,246,245,1),0.01),color-stop(rgba(203,219,219,1),1),color-stop(rgba(216,216,216,1),1));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%, rgba(203,219,219,1) 100%, rgba(216,216,216,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(244,246,245,1)), color-stop(100%,rgba(203,219,219,1)), color-stop(100%,rgba(216,216,216,1)));
+    background: -webkit-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -moz-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    background: linear-gradient(top, rgba(244,246,245,1) 1%,rgba(203,219,219,1) 100%,rgba(216,216,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f5', endColorstr='#d8d8d8',GradientType=0 );
+    /*box-shadow*/
+    -webkit-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    -moz-box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+    box-shadow: inset 0 0 3px #000,0 0 2px rgba(0,0,0,.5),0 2px 3px #666;
+}
+
+
+
+
+
+
+
+/*************** CARNIVALE ***************/
+.carnivale-container img {
+    width:90%;
+    margin:auto;
+    padding:3%;
+    margin:50px auto;
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.1);
+}
+
+.carnivale-container {
+    text-align:center;
+    margin-top:100px;
+}
