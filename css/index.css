@@ -334,6 +334,51 @@ top:-2px;
 .img-faded {
     opacity:0.75;
 }
+
+#about2 {
+    position:relative;
+    margin-top:200px;
+    margin-bottom:400px;
+    width:600px;
+    overflow:hidden;
+}
+
+@media (max-width: 420px) {
+    .about2 {
+        width:300px;
+    }
+}
+
+#background-div {
+    background-color:rgb(249, 191, 59);
+    position:absolute;
+    height:0;
+    width:110px;
+    transition: background-color 0.5s;
+}
+
+.about-inner2 img {
+    height:50px;
+}
+
+.about-inner2 {
+    //height:400px;
+}
+
+.about-inner2 {
+    display: table-cell; height: 400px; vertical-align: middle;
+}
+
+.about-div {
+    position:relative;
+    clear:both;
+    height:400px;
+}
+
+.dot {
+    float:left;
+}
+
 /*****   PROJECTS ***********/
 
 .featurette-image {

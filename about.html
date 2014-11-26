@@ -57,9 +57,11 @@
                 </div><!--/.navbar-collapse --> 
             </div>
         </div>
-        <div class="container about">
-            <div class="about-section paper-top effect2">
-                <div class="about-inner">
+        <div class="container about2" id="about2">
+            <div class="about-background" id="background-div"></div>
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class="img-responsive img-faded" src="images/amazon.png"/>
                     <h2 class="featurette-heading">
                         Software Developer Engineer, Amazon Appstore
@@ -67,8 +69,9 @@
                     <p class="muted">September, 2014</p>
                 </div>
             </div>
-            <div class="about-section paper-bottom">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-faded" src="images/outdologo.png">
                     <h2 class="featurette-heading">
                         Co-founded Outdo
@@ -76,26 +79,29 @@
                     <p class="muted">June, 2014</p>
                 </div>
             </div>
-            <div class="about-section paper-top">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-responsive img-faded" src="images/graduation.png">
                     <h2 class="featurette-heading">
-                        Graduated University of Waterloo with Honours Computer Science and Fine Arts Minor
+                        Graduated University of Waterloo, Honours Computer Science
                     </h2>
                     <p class="muted">June 2014</o>
                 </div>
             </div>
-            <div class="about-section paper-bottom">
-                <div class="about-inner">
-                    <img class=" img-faded" src="images/elephant.png">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
+                    <img class=" img-responsive img-faded" src="images/elephant.png">
                     <h2 class="featurette-heading">
-                        Backpacked across South East Asia
+                        Back packed across South East Asia
                     </h2>
-                    <p class="muted">July - August, 2013</p>
+                    <p class="muted">June 2014</o>
                 </div>
             </div>
-            <div class="about-section paper-top">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-responsive img-faded" src="images/kiwiicon.png">
                     <h2 class="featurette-heading">
                         Visited the Shire and climbed Mount Doom
@@ -103,8 +109,9 @@
                     <p class="muted">April, 2013</p>
                 </div>
             </div>
-            <div class="about-section paper-bottom">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-responsive img-faded" src="images/kangaroo.png">
                     <h2 class="featurette-heading">
                         Went on Exchange to Melbourne, Australia
@@ -112,8 +119,9 @@
                     <p class="muted">March - June, 2013</p>
                 </div>
             </div>
-            <div class="about-section paper-top">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-responsive img-faded" src="images/ibm.png">
                     <h2 class="featurette-heading">
                         Software Developer Coop at IBM
@@ -121,8 +129,9 @@
                     <p class="muted">January - February, 2014</p>
                 </div>
             </div>
-            <div class="about-section paper-bottom">
-                <div class="about-inner">
+            <div class="about-div">
+                <img class="dot" src="images/dot.png"/>
+                <div class="about-inner2">
                     <img class=" img-responsive img-faded" src="images/crank.png">
                     <h2 class="featurette-heading">
                         Storyboard Software Developer Coop at Crank Software
@@ -133,6 +142,54 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready( function() {
+                bgDiv = $("#background-div");
+                var aboutDivs = $(".about-div").size();
+                $("#about2").css('height',aboutDivs*400);
+            });
+
+            var colors = [ "rgb(249, 191, 59)",
+                            "rgb(38, 194, 129)",
+                            "rgb(25, 181, 254)",
+                            "rgb(58, 83, 155)",
+                            "rgb(103, 65, 114)",
+                            "rgb(219, 10, 91)",
+                            "rgb(217, 30, 24)",
+                            "rgb(249, 105, 14)",
+                            "rgb(243, 156, 18)"];
+            var i = 0;
+            $(window).scroll( function() {
+                var t = $(window).scrollTop();
+                var height = t+200;
+                var h = 400;
+                var off = 200;
+
+                bgDiv.css( 'height',height);
+                if( height <= off) {
+                    bgDiv.css('background-color','white');
+                } else if( height < h+off) {
+                    bgDiv.css('background-color',colors[0]);
+                } else if( height < h*2+off ) {
+                    bgDiv.css('background-color',colors[1]);
+                } else if( height < h*3+off ) {
+                    bgDiv.css('background-color',colors[2]);
+                } else if( height < h*4+off ) {
+                    bgDiv.css('background-color',colors[3]);
+                } else if( height < h*5+off ) {
+                    bgDiv.css('background-color',colors[4]);
+                } else if( height < h*6+off ) {
+                    bgDiv.css('background-color',colors[5]);
+                } else if( height < h*7+off ) {
+                    bgDiv.css('background-color',colors[6]);
+                } else if( height < h*8+off ) {
+                    bgDiv.css('background-color',colors[7]);
+                } else if( height < h*9+off ) {
+                    bgDiv.css('background-color',colors[8]);
+                }
+                console.log( bgDiv.css('height') );
+            });
+        </script>
     </body>
 </html>
 
