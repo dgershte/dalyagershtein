@@ -52,14 +52,47 @@
                         <li><a href="http://dalyagershtein.blogspot.ca/">Travel</a></li>
                         <li><a href="https://www.behance.net/dgershte"><img src="images/behance.png"/></a></li>
                         <li><a href="https://github.com/dgershte"><img style="height:20px!important"src="images/github.png"/></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC0hRZ2rrmTw5NGqV-_de9Eg"><img style="height:20px!important"src="images/youtube.png"/></a></li>
+                        <li><a href="https://www.youtube.com/user/dgershtein/videos"><img style="height:20px!important"src="images/youtube.png"/></a></li>
                     </ul>
                 </div><!--/.navbar-collapse --> 
             </div>
         </div>
         <div id="features">
-            <div id="hoverdiv">
-            </div>
+            <!--div id="hoverdiv">
+            </div-->
+            <a href="projects.html#wordy">
+                <div class="feature" id="wordy-feature">
+                    <div class="wordy-feature project-title">
+                        <div>
+                            <h2>Wordy Multiplayer</h2>
+                            <p class="lead">iPad Word Game</p>
+                        </div>
+                    </div>
+                    <div id="wordy">W</div>
+                </div>
+            </a>
+            <a href="projects.html#nbcuniversal">
+                <div class="feature" id="nbc-feature">
+                    <div class="nbc-feature project-title">
+                        <div>
+                            <h2>NBCUniversal Hack Winner</h2>
+                            <p class="lead">Web App</p>
+                        </div>
+                    </div>
+                    <div id="nbc"></div>
+                </div>
+            </a>
+            <a href="projects.html#mathcents">
+                <div class="feature" id="mathcents-feature">
+                    <div class="mathcents-feature project-title">
+                        <div>
+                            <h2>MathCents</h2>
+                            <p class="lead">Salesforce Hack Winner</p>
+                        </div>
+                    </div>
+                    <div id="mathcents"></div>
+                </div>
+            </a>
             <a href="projects.html#outdo">
                 <div class="feature" id="outdo-feature">
                     <div class="outdo-feature project-title">
@@ -168,18 +201,6 @@
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready( function() {
-            $("#features").height( $(window).height() - $("#navbar").height() );
-            var colors = ["#1abc9c","#3498db","#9b59b6","#e74c3c","#f1c40f","#34495e"];
-            var i = 0;
-            $( ".feature" ).mouseover(function(e) {
-                e.preventDefault();
-                var position = $(this).position();
-                $("#hoverdiv").stop(true,true).animate({"left":position.left,"top":position.top,"background-color":"red"},"fast").css("background-color",colors[i++ % colors.length] );
-            });
-        });
-    </script>
 </body>
 </html>
 

@@ -38,11 +38,11 @@ html, body {
 }
 
 #features {
-    width:100%;
-    margin:auto;
-    height:800px;
-    position:relative;
-    margin-top:50px;
+  width: 80%;
+  margin: auto;
+  height: 1400px;
+  position: relative;
+  margin-top: 150px;
 }
 
 .feature a {
@@ -57,9 +57,14 @@ html, body {
     position:relative;
     float:left;
     background-size:100%;
-    -webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
-    transition: all 0.5s;
+    -webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.2s;
     cursor:pointer;
+    border: 2px solid white;
+}
+
+.feature:hover {
+    border:10px solid white;//rgb(92, 209, 233);
 }
 
 #hoverdiv {
@@ -83,6 +88,7 @@ html, body {
     height:100%;
     transition:opacity 1s;
     padding:10px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .project-title > div {
@@ -111,6 +117,37 @@ html, body {
     color:white;
 }
 
+
+#wordy {
+    height:100%;
+    width:100%;
+}
+
+#wordy-feature {
+    background-color: rgb(181,17,110);
+    color:white;
+    text-align:center;
+    font-size:14em;
+}
+
+#nbc {
+    background: url("../images/top31.png");
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
+    height:100%;
+    width:100%;
+}
+
+#mathcents-feature {
+    background: url("../images/mathcents.png");
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
+    height:100%;
+    width:100%;
+}
+
 #squiggle-feature .caption h2 {
     margin-top:10%;
 }
@@ -120,6 +157,9 @@ html, body {
 }
 #walleimg {
     background:url("../images/walle.jpeg") no-repeat ;
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
     width:100%;
     height:100%;
 }
@@ -135,7 +175,10 @@ background: radial-gradient(ellipse at center,  #6b0141 0%,#3f0026 100%); /* W3C
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', endColorstr='#3f0026',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 #appleseedlogo {
-    background: url("../images/appleseed.png") no-repeat center;
+    background: url("../images/appleseed.png");
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
     height:100%;
     width:100%;
 }
@@ -152,7 +195,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
 }
 
 #picturethislogo {
-    background: url("../images/picturethisclear.png") no-repeat center;
+    background: url("../images/picturethisclear.png");
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
     width:100%;
     height:100%;
 }
@@ -214,32 +260,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b0141', end
 
 #carnival-feature {
     background: url("../images/carnivale.png") no-repeat center;
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
 }
 
 #ht-feature {
     background: url("../images/hoteltransylvannia.png") no-repeat center;
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
 }
 
 #chuckclose-feature {
     background: url("../images/chuckclose.jpg") no-repeat center;
+    background-size:   cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;  
 }
 
-@media (min-width:420px) and (max-width: 768px) {
+@media (min-width:620px) and (max-width: 768px) {
     .feature {
         width:50%;
-    }
-    #hoverdiv {
-        width:50%;
+        height:20% !important;
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 620px) {
     .feature {
         width:100%;
-        height:40% !important;
-    }
-    #hoverdiv {
-        width:100%;
-        height:40%;
+        height:20% !important;
     }
 }
 
@@ -348,6 +397,15 @@ top:-2px;
         width:300px;
     }
 }
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (-webkit-min-device-pixel-ratio : 2) {
+    #about2 {
+        width:300px;
+    }
+       
+} 
 
 #background-div {
     background-color:rgb(249, 191, 59);
@@ -384,7 +442,7 @@ top:-2px;
 .featurette-image {
     transition: box-shadow 0.5s;
     cursor:pointer;
-    width:500px;
+    width:400px;
     box-shadow: 0 0 30px 0px rgba(0,0,0,0.1);
 }
 
@@ -406,7 +464,7 @@ section {
     padding:100px 0;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color:#F9F9F9;
 }
 
@@ -580,7 +638,13 @@ height: 436px;
 
 
 
+.row {
+    padding:75px 0;
+}
 
+.row:first {
+    padding-top:125px;
+}
 
 
 /*************** CARNIVALE ***************/
